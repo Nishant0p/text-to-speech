@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('https://images.unsplash.com/photo-1516889440536-e48e4c6b3e4d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=1080') no-repeat center center/cover;
+    font-family: 'Arial', sans-serif;
+    min-height: 100vh; 
+    max-height: 100vh;
+    overflow: hidden; 
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+}
+
+.container h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ffcc00;
+}
+
+.container h1 span {
+    color: #ff4b5c;
+}
+
+textarea {
+    width: 100%;
+    max-width: 600px;
+    height: 200px;
+    box-sizing: border-box;
+    max-height: 200px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    font-size: 1.2em;
+    resize: none;
+    outline: none;
+    margin-bottom: 20px;
+}
+
+.controls {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+select {
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid #ff4b5c;
+    border-radius: 10px;
+    padding: 15px;
+    color: white;
+    font-size: 1em;
+    outline: none;
+    margin-right: 10px;
+    width: 200px;
+    appearance: none;
+    position: relative;
+}
+
+select option {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+select::-ms-expand {
+    display: none; 
+}
+
+button {
+    background: #ff4b5c;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 30px;
+    border: 0;
+    border-radius: 35px;
+    outline: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: #ff2a3a;
+    transform: scale(1.05);
+}
+
+button img {
+    width: 16px;
+    margin-right: 10px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    .container h1 {
+        font-size: 2em;
+    }
+
+    textarea {
+        height: 150px;
+        font-size: 1em;
+    }
+
+    select {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
